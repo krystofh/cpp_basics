@@ -4,23 +4,8 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
-            "type": "shell",
-            "command": "msbuild",
-            "args": [
-                "/property:GenerateFullPaths=true",
-                "/t:build",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "group": "build",
-            "presentation": {
-                "reveal": "silent"
-            },
-            "problemMatcher": "$msCompile"
-        },
-        {
             "type": "cppbuild",
-            "label": "C/C++: g++-13 build active file",
+            "label": "C/C++ Build on Mac",
             "command": "/opt/homebrew/bin/g++-13",
             "args": [
                 "-fdiagnostics-color=always",
@@ -37,6 +22,26 @@
             ],
             "group": "build",
             "detail": "compiler: /opt/homebrew/bin/g++-13"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++ Build on Windows",
+            "command": "C:\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: C:\\mingw64\\bin\\g++.exe"
         }
     ]
 }
