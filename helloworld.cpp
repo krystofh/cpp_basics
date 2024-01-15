@@ -1,3 +1,10 @@
+// Title: Helloworld
+// Date: 12.01.2024
+// Author: Krystof Hes
+/*Description:
+Simplest program in C++
+*/
+
 #include <iostream>
 #include <string>
 

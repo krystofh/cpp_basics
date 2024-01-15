@@ -1,5 +1,5 @@
 // Title: Calculator
-// Date: 15.01.2023
+// Date: 15.01.2024
 // Author: Krystof Hes
 
 /*Description:
@@ -39,25 +39,24 @@ int main()
     double num1, num2;
     char operation;
 
-    cout << "Please input a number" << endl;
+    cout << "Please input an expression:" << endl;
     if (!(cin >> num1))
     {
         cerr << "Error! Invalid input. Expected a numeric value.";
         return 1; // return error code
     }
-    cout << "Enter operator" << endl;
     if (!(cin >> operation))
     {
         cerr << "Error! Invalid input. Expected a char.";
         return 1; // return error code
     }
-    cout << "Please input a second number" << endl;
     if (!(cin >> num2))
     {
         cerr << "Error! Invalid input. Expected a numeric value.";
         return 1; // return error code
     }
     double result = process_operation(num1, num2, operation);
-    cout << "Result is: " << result;
+    cout << " = " << result << endl;
+    clog << "Program will terminate now. Thank you!" << endl; // example of a log message
     return 0;
 }

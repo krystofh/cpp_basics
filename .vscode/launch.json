@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Calculator (Win)",
+            "name": "Build and launch (Win)",
             "preLaunchTask": "C/C++ Build on Windows",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/calculator.exe",
+            "program": "${workspaceFolder}/out/formatting_output.exe",
             "args": [],
             "cwd": "${workspaceFolder}"
         }
