@@ -9,7 +9,7 @@
             "preLaunchTask": "C/C++ Build on Windows",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/out/formatting_output.exe",
+            "program": "${workspaceFolder}/out/variable_types.exe",
             "args": [],
             "cwd": "${workspaceFolder}"
         }

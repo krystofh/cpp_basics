@@ -4,6 +4,8 @@
         "xlocale": "cpp",
         "ostream": "cpp",
         "system_error": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "ios": "cpp",
+        "cstdint": "cpp"
     }
 }
