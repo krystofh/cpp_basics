@@ -73,6 +73,6 @@ int main()
     (a && b) ? cout << "True" << endl : cout << "False" << endl;              // readability bad, but compact
     string log_entry = (a && b) ? "Evaluated as true" : "Evaluated as false"; // store resulting string in a variable
     cout << log_entry << endl;                                                // output the result
-
+    
     return 0;
 }

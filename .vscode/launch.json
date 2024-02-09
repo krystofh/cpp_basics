@@ -9,7 +9,7 @@
             "preLaunchTask": "C/C++ Build on Windows",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/out/control_flow.exe",
+            "program": "${workspaceFolder}/out/arrays_and_chars.exe",
             "args": [],
             "cwd": "${workspaceFolder}"
         }
