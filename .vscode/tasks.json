@@ -6,10 +6,9 @@
         {
             "type": "cppbuild",
             "label": "C/C++ Build on Mac",
-            "command": "/opt/homebrew/bin/g++-13",
+            "command": "/opt/homebrew/bin/g++-14",
             "args": [
                 "-fdiagnostics-color=always",
-                "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}/out/${fileBasenameNoExtension}"
@@ -20,7 +19,10 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "detail": "compiler: /opt/homebrew/bin/g++-13"
         },
         {
@@ -40,11 +42,18 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "detail": "compiler: C:\\mingw64\\bin\\g++.exe"
         },
+        {
+            "label": "Run Executable on Mac",
+            "type": "shell",
+            "command": "${fileDirname}/out/${fileBasenameNoExtension}",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
     ]
 }

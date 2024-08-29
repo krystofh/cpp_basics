@@ -6,6 +6,7 @@ Basic examples in C++ language demonstrating the concepts and usage.
 
 - `out`: compiled files, not to be uploaded in git
 - `doc`: documentation of individual files (mostly generated with ChatGPT 3.5)
+- `tools`: utilities for checking the tooling (compiler, GIT, etc.)
 
 ## List of examples
 | Title                                          | Description                                                                                                                                      | Includes                                                                  |

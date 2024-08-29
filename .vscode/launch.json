@@ -12,6 +12,17 @@
             "program": "${workspaceFolder}/out/arrays_and_chars.exe",
             "args": [],
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Build and launch (Mac)",
+            "preLaunchTask": "C/C++ Build on Mac",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/out/03_numbers",
+            "args": [],
+            "cwd": "${workspacfeFolder}",
+            "MIMode": "lldb",
+            "miDebuggerPath": "/usr/bin/lldb"
         }
     ]
 }
