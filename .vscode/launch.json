@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build and launch (Win)",
+            "preLaunchTask": "C/C++ Build on Windows",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/out/arrays_and_chars.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Build and launch (Mac)",
+            "preLaunchTask": "C/C++ Build on Mac",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/out/03_numbers",
+            "args": [],
+            "cwd": "${workspacfeFolder}",
+            "MIMode": "lldb",
+            "miDebuggerPath": "/usr/bin/lldb"
+        }
+    ]
+}
