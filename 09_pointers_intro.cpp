@@ -22,7 +22,13 @@ int main()
     // Dereferencing a pointer - using the value rather than address
     cout << "Pointer value: " << *p_number << endl; // reading value stored under the address stored in the pointer
 
+    // Increasing the value of a pointer
+    cout << "==========: " << endl;
+    (*p_number)++;
+    cout << "Number now: " << number << endl;
+
     // Char pointers
+    cout << "==========: " << endl;
     const char *text{"Hello there!"}; // pointer to a an array of const chars
     // strings like these can't be changed and therefore the pointer must also be const
     cout << text << endl;
@@ -34,4 +40,5 @@ int main()
     // Avoid writing to or reading null pointers - strange things happen as memory does not belong to program
     int *p_number3{nullptr};
     cout << "Null pointer to some random address: " << *p_number3 << endl; // will not print, address does not belong to the program
+    return 0;
 }

@@ -34,4 +34,5 @@ int main()
     // freeing allocated memory
     delete[] numbers;
     numbers = nullptr;
+    return 0;
 }

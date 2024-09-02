@@ -101,4 +101,5 @@ int main()
     // Access to p_data2 is not possible anymore and memory is leaked
 
     cout << "Programm is ending well." << endl;
+    return 0;
 }
