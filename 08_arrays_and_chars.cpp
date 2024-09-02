@@ -10,8 +10,10 @@ using namespace std;
 
 int main()
 {
-    int numbers[3]{0, 1, 2};        // notice that no = is needed, this is the PREFERRED VARIANT
-    int numbers_partly[5] = {0, 1}; // rest is 0
+    // array initialisation
+    int numbers_nosize[]{1, 2, 3, 4, 5}; // no size declaration is possible
+    int numbers[3]{0, 1, 2};             // notice that no = is needed, this is the PREFERRED VARIANT
+    int numbers_partly[5] = {0, 1};      // rest of the array entries is 0 automatically
 
     // Number of elements of an array
     cout << "Number of elements:" << size(numbers) << endl; // std:size(arr) returns number of elemets of an array
@@ -66,8 +68,15 @@ int main()
     cout << "Characters:" << endl;
     char message1[5]{'T', 'e', 's', 't', '\0'}; // explicit declaration of null characted that always has to come at the end of a char array
     char message2[5]{'T', 'e', 's', 't'};       // implicit zero character, char array has length +1, \0 is added automatically
-    cout << message1 << endl;
-    cout << message2 << endl;
+    char message3[]{'T', 'e', 's', 't'};        // the null character is not added here
+    cout << message1 << endl;                   // If the array has a termnation character, it is calles C-string
+                                                // Printing the array is possible with chars, unlike other types of arrays
+    cout << message2 << endl;                   //
+    cout << message3 << endl;                   // Without the null character it may print some garbage
 
+    // __________________ String literals _______________________________________________________________
+    // better way of typing strings
+    char message4[]{"This is really much better string handling!"};
+    cout << message4 << endl;
     return 0;
 }
