@@ -13,7 +13,6 @@ using namespace std;
 
 int main()
 {
-    string name;
     int age;
     cout << "Input your full name:" << endl;
     // cin >> name >> age; // input on single line, spaces will disturb the input
