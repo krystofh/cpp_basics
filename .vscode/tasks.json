@@ -28,6 +28,29 @@
         },
         {
             "type": "cppbuild",
+            "label": "C/C++ Build on Mac (Folder)",
+            "command": "/opt/homebrew/bin/g++-14",
+            "args": [
+                "-std=c++20",
+                "-fdiagnostics-color=always",
+                "*.cpp",
+                "-o",
+                "${fileDirname}/out/${fileDirname}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: /opt/homebrew/bin/g++-13"
+        },
+        {
+            "type": "cppbuild",
             "label": "C/C++ Build on Windows",
             "command": "C:\\mingw64\\bin\\g++.exe",
             "args": [
